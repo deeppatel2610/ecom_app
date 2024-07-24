@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
     double height = MediaQuery.sizeOf(context).height;
     double width = MediaQuery.sizeOf(context).height;
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           search_icon(width: width, hetght: height,context: context),
@@ -30,7 +31,6 @@ class _HomeState extends State<Home> {
                   off_shop(height: width,context: context,width: width),
                   const SizedBox(height: 10),
                   logo_udf(context: context,height: height),
-                  name_logo(),
                   todey_pro(height, width,'Today Sale','4:50:45'),
                   all_pro_todey(height: height,context: context,my_pro: pro_todey),
                   todey_pro(height, width,'Sale','3 Day Left'),

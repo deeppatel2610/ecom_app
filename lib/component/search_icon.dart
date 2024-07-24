@@ -8,11 +8,12 @@ Padding search_icon({required hetght,required width,required BuildContext contex
       children: [
         Container(
           height: hetght/15,
-          width: width/2.65,
+          width: width/2.67,
           decoration: BoxDecoration(
               color: Colors.grey.shade200,
+              border: Border.all(color: Colors.grey.shade400,width: 1),
               boxShadow: [BoxShadow(color: Colors.black12,blurRadius: 2,spreadRadius: 2)],
-              borderRadius: BorderRadius.circular(15)),
+              borderRadius: BorderRadius.circular(10)),
           child: Row(
             children: [
               Padding(
@@ -33,14 +34,18 @@ Padding search_icon({required hetght,required width,required BuildContext contex
             ],
           ),
         ),
+        SizedBox(
+          width: 4,
+        ),
         Container(
           margin: EdgeInsets.all(5),
           height: hetght/15,
           width: hetght/15,
           decoration: BoxDecoration(
             color: Colors.grey.shade200,
+            border: Border.all(color: Colors.grey.shade400,width: 1),
             boxShadow: [BoxShadow(color: Colors.black12,blurRadius: 2,spreadRadius: 2)],
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
           ),
           child: IconButton(
             onPressed: () {

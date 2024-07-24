@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../utills/global.dart';
 
-Widget todey_pro(double height, double width,String temp1,String temp2) {
+Widget todey_pro(double height, double width, String temp1, String temp2) {
   return Padding(
-    padding: const EdgeInsets.only(left: 8,right: 8,top: 8),
+    padding: const EdgeInsets.only(left: 8, right: 8, top: 8),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -20,8 +20,10 @@ Widget todey_pro(double height, double width,String temp1,String temp2) {
               height: height / 27,
               width: width / 11,
               decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(50)),
+                border: Border.all(color: Colors.grey.shade400,width: 1),
+                color: Colors.grey.shade200,
+                borderRadius: BorderRadius.circular(50),
+              ),
               child: Text(
                 temp2,
                 style: const TextStyle(color: Colors.red),
@@ -38,9 +40,9 @@ Widget todey_pro(double height, double width,String temp1,String temp2) {
   );
 }
 
-Padding todey_pro_img(double height, dynamic index,List my_pro) {
+Padding todey_pro_img(double height, dynamic index, List my_pro) {
   return Padding(
-    padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 5),
+    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
     child: Container(
       child: Column(
         children: [
@@ -49,14 +51,14 @@ Padding todey_pro_img(double height, dynamic index,List my_pro) {
             height: height / 6,
             width: height / 6,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color: Colors.grey.shade400,width: 1),
+              borderRadius: BorderRadius.circular(10),
               color: Colors.cyan,
               boxShadow: const [
                 BoxShadow(color: Colors.black12, blurRadius: 2, spreadRadius: 2)
               ],
               image: DecorationImage(
-                  image: AssetImage(my_pro[index]['image']),
-                  fit: BoxFit.cover),
+                  image: AssetImage(my_pro[index]['image']), fit: BoxFit.cover),
             ),
           ),
           Text(
@@ -73,7 +75,10 @@ Padding todey_pro_img(double height, dynamic index,List my_pro) {
   );
 }
 
-Widget all_pro_todey({required double height, required BuildContext context ,required List my_pro}) {
+Widget all_pro_todey(
+    {required double height,
+    required BuildContext context,
+    required List my_pro}) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: SingleChildScrollView(
@@ -87,7 +92,7 @@ Widget all_pro_todey({required double height, required BuildContext context ,req
                 pro_dieting = my_pro[index];
                 Navigator.of(context).pushNamed('/dieting');
               },
-              child: todey_pro_img(height, index,my_pro),
+              child: todey_pro_img(height, index, my_pro),
             ),
           )
         ],

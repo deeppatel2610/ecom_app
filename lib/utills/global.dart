@@ -36,21 +36,21 @@ List boss = [
       "price": 90.00
     },
     {
-      "name": "Nike Blazer Mid '77",
+      "name": "Nike Blazer",
       "image": "assets/image/nike_pro_4.jpeg",
       "details":
       "The Nike Blazer Mid '77 offers a retro style with a durable leather and synthetic upper for a premium look and feel.",
       "price": 100.00
     },
     {
-      "name": "Nike ZoomX Vaporfly NEXT%",
-      "image": "assets/image/nike_pro_6.jpeg",
+      "name": "Nike ZoomX",
+      "image" : "assets/image/nike_pro_6.jpeg",
       "details":
       "The Nike ZoomX Vaporfly NEXT% is engineered for speed with a lightweight design and responsive cushioning for a race-day advantage.",
       "price": 250.00
     },
     {
-      "name": "Nike Pegasus Trail 3",
+      "name": "Nike Pegasus Trail",
       "image": "assets/image/nike_pro_7.jpeg",
       "details":
       "The Nike Pegasus Trail 3 provides a rugged design with a durable outsole for off-road running and hiking.",
@@ -64,14 +64,14 @@ List boss = [
       "price": 130.00
     },
     {
-      "name": "Nike Air Zoom Pegasus 38",
+      "name": "Nike Air Zoom ",
       "image": "assets/image/nike_pro_9.jpeg",
       "details":
       "The Nike Air Zoom Pegasus 38 delivers a responsive ride with a breathable upper and a secure fit for daily runs.",
       "price": 120.00
     },
     {
-      "name": "Nike Mercurial Superfly 8 Elite",
+      "name": "Nike Mercurial",
       "image": "assets/image/nike_pro_10.jpeg",
       "details":
       "The Nike Mercurial Superfly 8 Elite soccer cleats offer explosive speed and precise control with a lightweight design and innovative traction.",
@@ -110,7 +110,7 @@ List boss = [
       "price": 90.00
     },
     {
-      "name": "Adidas Yeezy Boost 350 V2",
+      "name": "Adidas Yeezy Boost",
       "image": "assets/image/adidas_pro_5.jpg",
       "details":
       "The Adidas Yeezy Boost 350 V2 provides a stylish and comfortable fit with its Primeknit upper and Boost midsole.",
@@ -138,14 +138,14 @@ List boss = [
       "price": 45.00
     },
     {
-      "name": "Adidas Terrex Free Hiker",
+      "name": "Adidas Terrex ",
       "image": "assets/image/adidas_pro_9.jpg",
       "details":
       "The Adidas Terrex Free Hiker provides durability and comfort for outdoor adventures, featuring a waterproof GORE-TEX membrane.",
       "price": 200.00
     },
     {
-      "name": "Adidas Predator Freak.1",
+      "name": "Adidas Predator",
       "image": "assets/image/adidas_pro_10.jpg",
       "details":
       "The Adidas Predator Freak.1 soccer cleats offer superior control and precision with a Demonskin upper and a lightweight outsole.",
@@ -177,7 +177,7 @@ List boss = [
       "price": 80.00
     },
     {
-      "name": "New Balance FuelCell Rebel v2",
+      "name": "N B FuelCell Rebel v2",
       "image": "assets/image/NB_pro_4.jpg",
       "details":
       "The New Balance FuelCell Rebel v2 provides responsive cushioning and a lightweight design for high-speed performance.",
@@ -198,21 +198,21 @@ List boss = [
       "price": 120.00
     },
     {
-      "name": "New Balance Minimus Prevail",
+      "name": "N B Minimus Prevail",
       "image": "assets/image/NB_pro_7.jpeg",
       "details":
       "The New Balance Minimus Prevail is designed for training with a low-profile silhouette and flexible sole.",
       "price": 130.00
     },
     {
-      "name": "New Balance Numeric 306",
+      "name": "N B Numeric 306",
       "image": "assets/image/NB_pro_8.jpeg",
       "details":
       "The New Balance Numeric 306 is a skate shoe offering durability and board feel with a suede and canvas upper.",
       "price": 85.00
     },
     {
-      "name": "New Balance Fresh Foam Roav",
+      "name": "N B Fresh Foam Roav",
       "image": "assets/image/NB_pro_9.jpg",
       "details":
       "The New Balance Fresh Foam Roav provides all-day comfort with a cushioned midsole and a sleek design.",
@@ -272,7 +272,7 @@ List boss = [
       "price": 120.00
     },
     {
-      "name": "Puma Thunder Spectra",
+      "name": "Puma Thunder",
       "image": "assets/image/puma_pro_7.jpg",
       "details":
       "The Puma Thunder Spectra combines bold colors and a chunky design for a statement-making look.",
@@ -286,7 +286,7 @@ List boss = [
       "price": 65.00
     },
     {
-      "name": "Puma Speed 600 Fusefit",
+      "name": "Puma Speed 600",
       "image": "assets/image/puma_pro_9.jpg",
       "details":
       "The Puma Speed 600 Fusefit provides a customizable fit with a knitted upper and responsive cushioning.",
@@ -360,7 +360,7 @@ List boss = [
       "price": 75.00
     },
     {
-      "name": "Asics Gel-Quantum 360",
+      "name": "Asics Gel-Quantum",
       "image": "assets/image/asice_pro_9.jpeg",
       "details":
       "The Asics Gel-Quantum 360 provides 360-degree GEL technology cushioning for maximum comfort.",
@@ -392,11 +392,30 @@ List pro_todey_2 = [
 ];
 
 List logo_list = [
-  'assets/image/Logo_nike.jpg',
-  'assets/image/adidas_logo.jpeg',
-  'assets/image/NB_logo.jpg',
-  'assets/image/puma_logo.jpeg',
-  'assets/image/asics_logo.png'
+  {
+    'name':'Nike',
+    'img': 'assets/image/Logo_nike.jpg',
+  },
+
+  {
+    'name':'Adidas',
+    'img':   'assets/image/adidas_logo.jpeg',
+  },
+
+  {
+    'name':'NB',
+    'img': 'assets/image/NB_logo.jpg',
+  },
+
+  {
+    'name':'Puma',
+    'img': 'assets/image/puma_logo.jpeg',
+  },
+
+  {
+    'name':'Asics',
+    'img': 'assets/image/asics_logo.png',
+  },
 ];
 
 List name = [

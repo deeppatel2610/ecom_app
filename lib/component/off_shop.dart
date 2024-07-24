@@ -1,10 +1,13 @@
 import 'package:ecom_app/utills/global.dart';
 import 'package:flutter/material.dart';
 
-GestureDetector off_shop({required double height,required double width,required BuildContext context}) {
+GestureDetector off_shop(
+    {required double height,
+    required double width,
+    required BuildContext context}) {
   return GestureDetector(
     onTap: () {
-      pro_dieting=name[0];
+      pro_dieting = name[0];
       Navigator.of(context).pushNamed('/dieting');
     },
     child: Padding(
@@ -14,16 +17,16 @@ GestureDetector off_shop({required double height,required double width,required 
         height: height / 3,
         width: width,
         decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(15),
-            boxShadow: const [
-              BoxShadow(
-                  color: Colors.black12, blurRadius: 2, spreadRadius: 2)
-            ],
-            image: const DecorationImage(
-              image: AssetImage('assets/image/temp.jpg'),
-              fit: BoxFit.cover,
-            )),
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: const [
+            BoxShadow(color: Colors.black12, blurRadius: 2, spreadRadius: 2)
+          ],
+          image: const DecorationImage(
+            image: AssetImage('assets/image/temp.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Row(
@@ -34,12 +37,13 @@ GestureDetector off_shop({required double height,required double width,required 
                 height: height / 20,
                 width: width / 7,
                 decoration: BoxDecoration(
-                    boxShadow: const [
-                      BoxShadow(
-                          color: Colors.black12, blurRadius: 2, spreadRadius: 2)
-                    ],
-                    color: Colors.black87,
-                    borderRadius: BorderRadius.circular(15)),
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.black12, blurRadius: 2, spreadRadius: 2)
+                  ],
+                  color: Colors.black54,
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: const Text(
                   'Shop now',
                   style: TextStyle(
@@ -53,12 +57,13 @@ GestureDetector off_shop({required double height,required double width,required 
                 height: height / 20,
                 width: width / 7,
                 decoration: BoxDecoration(
-                    boxShadow: const [
-                      BoxShadow(
-                          color: Colors.black12, blurRadius: 2, spreadRadius: 2)
-                    ],
-                    color: Colors.black87,
-                    borderRadius: BorderRadius.circular(15)),
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.black12, blurRadius: 2, spreadRadius: 2)
+                  ],
+                  color: Colors.black54,
+                  borderRadius: BorderRadius.circular(10),
+                ),
                 child: const Text(
                   '\$50 off',
                   style: TextStyle(

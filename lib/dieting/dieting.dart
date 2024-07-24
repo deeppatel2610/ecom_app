@@ -56,8 +56,8 @@ class _DietingState extends State<Dieting> {
                                 spreadRadius: 1)
                           ],
                           borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(15),
-                              topRight: Radius.circular(15)),
+                              topLeft: Radius.circular(10),
+                              topRight: Radius.circular(10)),
                           color: Colors.white),
                       child: Column(
                         children: [
@@ -121,9 +121,9 @@ class _DietingState extends State<Dieting> {
                                             ],
                                             color: Colors.grey.shade200,
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(10),
                                             border: Border.all(
-                                                color: Colors.red, width: 3)),
+                                                color: Colors.red, width: 3),),
                                         child: const Text(
                                           '28',
                                           style: TextStyle(
@@ -142,13 +142,13 @@ class _DietingState extends State<Dieting> {
                                         decoration: BoxDecoration(
                                             color: Colors.white70,
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(10),
                                             boxShadow: const [
                                               BoxShadow(
                                                   color: Colors.black12,
                                                   spreadRadius: 5,
                                                   blurRadius: 5)
-                                            ]),
+                                            ],),
                                         child: const Text(
                                           '29',
                                           style: TextStyle(
@@ -174,7 +174,7 @@ class _DietingState extends State<Dieting> {
                                           ],
                                           color: Colors.white70,
                                           borderRadius:
-                                              BorderRadius.circular(15),
+                                              BorderRadius.circular(10),
                                         ),
                                         alignment: Alignment.center,
                                         child: const Text(
@@ -202,7 +202,7 @@ class _DietingState extends State<Dieting> {
                                           ],
                                           color: Colors.white70,
                                           borderRadius:
-                                              BorderRadius.circular(15),
+                                              BorderRadius.circular(10),
                                         ),
                                         alignment: Alignment.center,
                                         child: const Text(
@@ -228,7 +228,7 @@ class _DietingState extends State<Dieting> {
                                           ],
                                           color: Colors.white70,
                                           borderRadius:
-                                              BorderRadius.circular(15),
+                                              BorderRadius.circular(10),
                                         ),
                                         alignment: Alignment.center,
                                         child: const Text(
@@ -269,7 +269,7 @@ class _DietingState extends State<Dieting> {
                                             ],
                                             color: Colors.white70,
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(10),
                                             border: Border.all(
                                                 color: Colors.red, width: 3)),
                                       ),
@@ -283,7 +283,7 @@ class _DietingState extends State<Dieting> {
                                         decoration: BoxDecoration(
                                             color: Colors.black,
                                             borderRadius:
-                                                BorderRadius.circular(15),
+                                                BorderRadius.circular(10),
                                             boxShadow: const [
                                               BoxShadow(
                                                   color: Colors.black12,
@@ -306,7 +306,7 @@ class _DietingState extends State<Dieting> {
                                           ],
                                           color: Colors.black12,
                                           borderRadius:
-                                              BorderRadius.circular(15),
+                                              BorderRadius.circular(10),
                                         ),
                                         alignment: Alignment.center,
                                       ),

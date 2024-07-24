@@ -41,7 +41,7 @@ class _NikeState extends State<Nike> {
                   (index) => GestureDetector(
                     onTap: () {
                       pro_dieting=boss[deep][index];
-                      Navigator.of(context).pushNamed('/dieting');
+                      Navigator.of(context).pushReplacementNamed('/dieting');
                     },
                     child: nike(
                       width: width,
