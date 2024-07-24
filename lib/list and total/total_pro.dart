@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../utills/global.dart';
 
-class ListPro extends StatefulWidget {
-  const ListPro({super.key});
+class TotalPro extends StatefulWidget {
+  const TotalPro({super.key});
 
   @override
-  State<ListPro> createState() => _ListProState();
+  State<TotalPro> createState() => _TotalProState();
 }
 
-class _ListProState extends State<ListPro> {
+class _TotalProState extends State<TotalPro> {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.sizeOf(context).height;
@@ -41,7 +41,7 @@ class _ListProState extends State<ListPro> {
                   children: [
                     ...List.generate(
                       your_list_pro.length,
-                      (index) => your_pro(
+                      (index) => total_pro(
                           height: width,
                           width: width,
                           mylist: your_list_pro,
@@ -58,7 +58,7 @@ class _ListProState extends State<ListPro> {
               padding: const EdgeInsets.all(8.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushReplacementNamed('/total');
+                  Navigator.of(context).pop();
                 },
                 child: Container(
                   alignment: Alignment.center,
@@ -75,7 +75,7 @@ class _ListProState extends State<ListPro> {
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Text(
-                    'Total All Products',
+                    '\$$total/- Buy',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _ListProState extends State<ListPro> {
     );
   }
 
-  Container your_pro(
+  Container total_pro(
       {required double height,
       required double width,
       required List mylist,
@@ -125,6 +125,7 @@ class _ListProState extends State<ListPro> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
@@ -132,12 +133,12 @@ class _ListProState extends State<ListPro> {
                         children: [
                           Text(
                             mylist[index]['name'],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.w500, fontSize: 20),
                           ),
                           Text(
                             "\$${mylist[index]['price']}/-",
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.w500, fontSize: 17),
                           ),
                         ],
@@ -149,7 +150,7 @@ class _ListProState extends State<ListPro> {
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
                             color: Colors.grey.shade300),
-                        child: Text(
+                        child: const Text(
                           '42,Green',
                           style: TextStyle(
                               fontSize: 15,
@@ -162,16 +163,6 @@ class _ListProState extends State<ListPro> {
                 ),
               ],
             ),
-            Container(
-              alignment: Alignment.bottomRight,
-              child: IconButton(
-                  onPressed: () {
-                    setState(() {
-                      your_list_pro.removeAt(index);
-                    });
-                  },
-                  icon: Icon(Icons.delete_forever)),
-            )
           ],
         ),
       ),

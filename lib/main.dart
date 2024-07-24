@@ -1,5 +1,6 @@
 import 'package:ecom_app/home%20and%20splash/Home.dart';
 import 'package:ecom_app/list%20and%20total/list_pro.dart';
+import 'package:ecom_app/list%20and%20total/total_pro.dart';
 import 'package:ecom_app/pro_page/nike.dart';
 import 'package:ecom_app/home%20and%20splash/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         '/nike':(context)=>const Nike(),
         '/dieting':(context)=>const Dieting(),
         '/list':(context)=>const ListPro(),
+        '/total':(context)=>const TotalPro()
       },
     );
   }

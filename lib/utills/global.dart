@@ -1,6 +1,9 @@
 Map pro_dieting = {};
 List your_list_pro=[];
 
+
+double total=0;
+
 int deep = 0;
 
 List boss = [
