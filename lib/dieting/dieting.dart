@@ -326,11 +326,11 @@ class _DietingState extends State<Dieting> {
               child: GestureDetector(
                 onTap: () {
                   your_list_pro.add(pro_dieting);
-                  deep += 1;
                   for (int i = 0; i < your_list_pro.length; i++) {
                     total = total + your_list_pro[i]['price'];
                   }
-                  total = (total * 18) / 100;
+                  total += (total * 18) / 100;
+                  deep+=1;
                   Navigator.of(context).pushReplacementNamed('/list');
                 },
                 child: Container(

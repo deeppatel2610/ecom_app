@@ -18,12 +18,14 @@ class _SplashScreenState extends State<SplashScreen> {
     );
     return Scaffold(
       backgroundColor: Color(0xffECEBE9),
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/image/logo.jpg'),
+      body: Center(
+        child: Container(
+          height: double.infinity,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/image/logo.jpg'),
+            ),
           ),
         ),
       ),
