@@ -49,11 +49,7 @@ Here's a concise list of features for a shoes eCommerce application, suitable fo
     <img src= "https://github.com/user-attachments/assets/99619de3-9923-49d2-8bec-ea74024e03ea"  height =500px> 
     <img src= "https://github.com/user-attachments/assets/290c1658-06cc-4170-adac-0201e0d34764"  height =500px>
 
-
-https://github.com/user-attachments/assets/23033946-6712-4878-a486-bc4e4870dbf9
-
-
-
-
-
+    https://github.com/user-attachments/assets/16692a22-c9cc-4a7a-b24e-f6704bb6f299
   </div>
+  
+
